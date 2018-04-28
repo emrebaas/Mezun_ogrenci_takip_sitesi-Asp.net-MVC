@@ -1,0 +1,100 @@
+c:\users\emre\documents\visual studio 2015\Projects\ymanasayfa\ymanasayfa\bin\ApplicationInsights.config
+c:\users\emre\documents\visual studio 2015\Projects\ymanasayfa\ymanasayfa\bin\roslyn\csc.exe
+c:\users\emre\documents\visual studio 2015\Projects\ymanasayfa\ymanasayfa\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\emre\documents\visual studio 2015\Projects\ymanasayfa\ymanasayfa\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\emre\documents\visual studio 2015\Projects\ymanasayfa\ymanasayfa\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\emre\documents\visual studio 2015\Projects\ymanasayfa\ymanasayfa\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\emre\documents\visual studio 2015\Projects\ymanasayfa\ymanasayfa\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\emre\documents\visual studio 2015\Projects\ymanasayfa\ymanasayfa\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\emre\documents\visual studio 2015\Projects\ymanasayfa\ymanasayfa\bin\roslyn\System.Collections.Immutable.dll
+c:\users\emre\documents\visual studio 2015\Projects\ymanasayfa\ymanasayfa\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\emre\documents\visual studio 2015\Projects\ymanasayfa\ymanasayfa\bin\roslyn\vbc.exe
+c:\users\emre\documents\visual studio 2015\Projects\ymanasayfa\ymanasayfa\bin\roslyn\VBCSCompiler.exe
+c:\users\emre\documents\visual studio 2015\Projects\ymanasayfa\ymanasayfa\bin\roslyn\VBCSCompiler.exe.config
+c:\users\emre\documents\visual studio 2015\Projects\ymanasayfa\ymanasayfa\bin\ymanasayfa.dll.config
+c:\users\emre\documents\visual studio 2015\Projects\ymanasayfa\ymanasayfa\bin\ymanasayfa.dll
+c:\users\emre\documents\visual studio 2015\Projects\ymanasayfa\ymanasayfa\bin\ymanasayfa.pdb
+c:\users\emre\documents\visual studio 2015\Projects\ymanasayfa\ymanasayfa\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\emre\documents\visual studio 2015\Projects\ymanasayfa\ymanasayfa\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\emre\documents\visual studio 2015\Projects\ymanasayfa\ymanasayfa\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\emre\documents\visual studio 2015\Projects\ymanasayfa\ymanasayfa\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\emre\documents\visual studio 2015\Projects\ymanasayfa\ymanasayfa\bin\Microsoft.AI.Web.dll
+c:\users\emre\documents\visual studio 2015\Projects\ymanasayfa\ymanasayfa\bin\Microsoft.AI.WindowsServer.dll
+c:\users\emre\documents\visual studio 2015\Projects\ymanasayfa\ymanasayfa\bin\Microsoft.ApplicationInsights.dll
+c:\users\emre\documents\visual studio 2015\Projects\ymanasayfa\ymanasayfa\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\emre\documents\visual studio 2015\Projects\ymanasayfa\ymanasayfa\bin\Microsoft.Web.Infrastructure.dll
+c:\users\emre\documents\visual studio 2015\Projects\ymanasayfa\ymanasayfa\bin\System.Web.Helpers.dll
+c:\users\emre\documents\visual studio 2015\Projects\ymanasayfa\ymanasayfa\bin\System.Web.Mvc.dll
+c:\users\emre\documents\visual studio 2015\Projects\ymanasayfa\ymanasayfa\bin\System.Web.Razor.dll
+c:\users\emre\documents\visual studio 2015\Projects\ymanasayfa\ymanasayfa\bin\System.Web.Webpages.Deployment.dll
+c:\users\emre\documents\visual studio 2015\Projects\ymanasayfa\ymanasayfa\bin\System.Web.Webpages.dll
+c:\users\emre\documents\visual studio 2015\Projects\ymanasayfa\ymanasayfa\bin\System.Web.Webpages.Razor.dll
+c:\users\emre\documents\visual studio 2015\Projects\ymanasayfa\ymanasayfa\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\emre\documents\visual studio 2015\Projects\ymanasayfa\ymanasayfa\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\emre\documents\visual studio 2015\Projects\ymanasayfa\ymanasayfa\bin\Microsoft.AI.Web.xml
+c:\users\emre\documents\visual studio 2015\Projects\ymanasayfa\ymanasayfa\bin\Microsoft.AI.WindowsServer.xml
+c:\users\emre\documents\visual studio 2015\Projects\ymanasayfa\ymanasayfa\bin\Microsoft.ApplicationInsights.xml
+c:\users\emre\documents\visual studio 2015\Projects\ymanasayfa\ymanasayfa\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\emre\documents\visual studio 2015\Projects\ymanasayfa\ymanasayfa\bin\System.Web.Razor.xml
+c:\users\emre\documents\visual studio 2015\Projects\ymanasayfa\ymanasayfa\bin\System.Web.Webpages.xml
+c:\users\emre\documents\visual studio 2015\Projects\ymanasayfa\ymanasayfa\bin\System.Web.Webpages.Deployment.xml
+c:\users\emre\documents\visual studio 2015\Projects\ymanasayfa\ymanasayfa\bin\System.Web.Webpages.Razor.xml
+c:\users\emre\documents\visual studio 2015\Projects\ymanasayfa\ymanasayfa\bin\System.Web.Helpers.xml
+c:\users\emre\documents\visual studio 2015\Projects\ymanasayfa\ymanasayfa\bin\System.Web.Mvc.xml
+c:\users\emre\documents\visual studio 2015\Projects\ymanasayfa\ymanasayfa\obj\Debug\ymanasayfa.dll
+c:\users\emre\documents\visual studio 2015\Projects\ymanasayfa\ymanasayfa\obj\Debug\ymanasayfa.pdb
+C:\Users\emre\documents\visual studio 2015\Projects\ymanasayfa\ymanasayfa\bin\EntityFramework.dll
+C:\Users\emre\documents\visual studio 2015\Projects\ymanasayfa\ymanasayfa\bin\EntityFramework.SqlServer.dll
+C:\Users\emre\documents\visual studio 2015\Projects\ymanasayfa\ymanasayfa\bin\EntityFramework.xml
+C:\Users\emre\documents\visual studio 2015\Projects\ymanasayfa\ymanasayfa\bin\EntityFramework.SqlServer.xml
+C:\Users\emre\Documents\Visual Studio 2015\Projects\ymanasayfa\ymanasayfa\obj\Debug\ymanasayfa.csprojResolveAssemblyReference.cache
+C:\Users\emre\Desktop\yedek\ymanasayfa\ymanasayfa\bin\ApplicationInsights.config
+C:\Users\emre\Desktop\yedek\ymanasayfa\ymanasayfa\bin\roslyn\csc.exe
+C:\Users\emre\Desktop\yedek\ymanasayfa\ymanasayfa\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\emre\Desktop\yedek\ymanasayfa\ymanasayfa\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\emre\Desktop\yedek\ymanasayfa\ymanasayfa\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\emre\Desktop\yedek\ymanasayfa\ymanasayfa\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\emre\Desktop\yedek\ymanasayfa\ymanasayfa\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\emre\Desktop\yedek\ymanasayfa\ymanasayfa\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\emre\Desktop\yedek\ymanasayfa\ymanasayfa\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\emre\Desktop\yedek\ymanasayfa\ymanasayfa\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\emre\Desktop\yedek\ymanasayfa\ymanasayfa\bin\roslyn\vbc.exe
+C:\Users\emre\Desktop\yedek\ymanasayfa\ymanasayfa\bin\roslyn\VBCSCompiler.exe
+C:\Users\emre\Desktop\yedek\ymanasayfa\ymanasayfa\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\emre\Desktop\yedek\ymanasayfa\ymanasayfa\bin\ymanasayfa.dll.config
+C:\Users\emre\Desktop\yedek\ymanasayfa\ymanasayfa\bin\ymanasayfa.dll
+C:\Users\emre\Desktop\yedek\ymanasayfa\ymanasayfa\bin\ymanasayfa.pdb
+C:\Users\emre\Desktop\yedek\ymanasayfa\ymanasayfa\bin\EntityFramework.dll
+C:\Users\emre\Desktop\yedek\ymanasayfa\ymanasayfa\bin\EntityFramework.SqlServer.dll
+C:\Users\emre\Desktop\yedek\ymanasayfa\ymanasayfa\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\emre\Desktop\yedek\ymanasayfa\ymanasayfa\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\emre\Desktop\yedek\ymanasayfa\ymanasayfa\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\emre\Desktop\yedek\ymanasayfa\ymanasayfa\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\emre\Desktop\yedek\ymanasayfa\ymanasayfa\bin\Microsoft.AI.Web.dll
+C:\Users\emre\Desktop\yedek\ymanasayfa\ymanasayfa\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\emre\Desktop\yedek\ymanasayfa\ymanasayfa\bin\Microsoft.ApplicationInsights.dll
+C:\Users\emre\Desktop\yedek\ymanasayfa\ymanasayfa\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\emre\Desktop\yedek\ymanasayfa\ymanasayfa\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\emre\Desktop\yedek\ymanasayfa\ymanasayfa\bin\System.Web.Helpers.dll
+C:\Users\emre\Desktop\yedek\ymanasayfa\ymanasayfa\bin\System.Web.Mvc.dll
+C:\Users\emre\Desktop\yedek\ymanasayfa\ymanasayfa\bin\System.Web.Razor.dll
+C:\Users\emre\Desktop\yedek\ymanasayfa\ymanasayfa\bin\System.Web.Webpages.Deployment.dll
+C:\Users\emre\Desktop\yedek\ymanasayfa\ymanasayfa\bin\System.Web.Webpages.dll
+C:\Users\emre\Desktop\yedek\ymanasayfa\ymanasayfa\bin\System.Web.Webpages.Razor.dll
+C:\Users\emre\Desktop\yedek\ymanasayfa\ymanasayfa\bin\EntityFramework.xml
+C:\Users\emre\Desktop\yedek\ymanasayfa\ymanasayfa\bin\EntityFramework.SqlServer.xml
+C:\Users\emre\Desktop\yedek\ymanasayfa\ymanasayfa\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\emre\Desktop\yedek\ymanasayfa\ymanasayfa\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\emre\Desktop\yedek\ymanasayfa\ymanasayfa\bin\Microsoft.AI.Web.xml
+C:\Users\emre\Desktop\yedek\ymanasayfa\ymanasayfa\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\emre\Desktop\yedek\ymanasayfa\ymanasayfa\bin\Microsoft.ApplicationInsights.xml
+C:\Users\emre\Desktop\yedek\ymanasayfa\ymanasayfa\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\emre\Desktop\yedek\ymanasayfa\ymanasayfa\bin\System.Web.Razor.xml
+C:\Users\emre\Desktop\yedek\ymanasayfa\ymanasayfa\bin\System.Web.Webpages.xml
+C:\Users\emre\Desktop\yedek\ymanasayfa\ymanasayfa\bin\System.Web.Webpages.Deployment.xml
+C:\Users\emre\Desktop\yedek\ymanasayfa\ymanasayfa\bin\System.Web.Webpages.Razor.xml
+C:\Users\emre\Desktop\yedek\ymanasayfa\ymanasayfa\bin\System.Web.Helpers.xml
+C:\Users\emre\Desktop\yedek\ymanasayfa\ymanasayfa\bin\System.Web.Mvc.xml
+C:\Users\emre\Desktop\yedek\ymanasayfa\ymanasayfa\obj\Debug\ymanasayfa.dll
+C:\Users\emre\Desktop\yedek\ymanasayfa\ymanasayfa\obj\Debug\ymanasayfa.pdb
+C:\Users\emre\Desktop\yedek\ymanasayfa\ymanasayfa\obj\Debug\ymanasayfa.csprojResolveAssemblyReference.cache

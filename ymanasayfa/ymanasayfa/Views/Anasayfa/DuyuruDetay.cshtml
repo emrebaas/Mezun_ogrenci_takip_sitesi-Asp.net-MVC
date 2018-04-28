@@ -1,0 +1,124 @@
+﻿
+
+
+@model ymanasayfa.Models.Duyuru
+
+@{
+    ViewBag.Title = "DuyuruDetay";
+    Layout = "~/Views/Shared/LayoutDuyurudetay.cshtml";
+}
+
+
+<table align="center" style="margin-top:50px; margin-bottom:50px;">
+    <tr>
+        <td>
+
+            @if (Model.Kullanıcı.resim == null || Model.Kullanıcı.resim == "NULL" || Model.Kullanıcı.resim == "")
+            {
+                    <a href="/Anasayfa/Profil/@Model.duyuru_kullanici_id">
+                    <img  width="50" height="50" style="border-radius:20px;" src="~/Content/img/memlog.png" />
+                        </a>
+            }
+            else
+            {   <a href="/Anasayfa/Profil/@Model.duyuru_kullanici_id">
+                <img width="50" height="50" style="border-radius:20px;" src="~/Content/img/@Model.Kullanıcı.resim" />
+                </a>
+                }
+
+
+
+</td>
+        <td>@Html.DisplayFor(model => model.duyuruisim)</td>
+    </tr>
+
+    <tr>
+        <td></td>
+        <td width="600">
+            @if (Model.duyururesim == null || Model.duyururesim.Length < 1)
+            {
+
+            }
+            else
+            {
+
+                <img width="600" height="250" src="~/Content/img/duyuru/@Model.duyururesim">
+            }
+        </td>
+    </tr>
+
+</table>
+
+<div>
+    <div style="overflow:scroll; height:400px;">
+        @foreach (var item in Model.Yorums.ToList())
+        {
+            <table border="0" align="center" width="500" style="margin-top:2px; margin-left:250px; background-color:#d6e4e2;padding-left:3px;">
+                <tr>
+                    <td width="40">
+
+                        @if (item.Kullanıcı.resim == null || Model.Kullanıcı.resim == "NULL" || Model.Kullanıcı.resim == "")
+                        {
+                            <a href="/Anasayfa/Profil/@item.yorum_kullanici_id">
+                                <img width="30" height="30" style="border-radius:20px;" src="~/Content/img/memlog.png" />
+                            </a>
+                        }
+                        else
+                        {       <a href="/Anasayfa/Profil/@item.yorum_kullanici_id">
+                        <img width="30" height="30" style="border-radius:20px;" src="~/Content/img/@item.Kullanıcı.resim" />
+                    </a>
+                        }
+
+
+
+                    </td>
+
+                    <td style="padding-left:5px;">
+                        <a href="/Anasayfa/Profil/@item.yorum_kullanici_id">
+                            <h5 style="float:left; color:#2a7cc6;">@item.Kullanıcı.isim &nbsp;&nbsp; </h5>
+                        </a><h5 style="color:#4a4243;">  @item.yorum_aciklama</h5>
+                        
+                    </td>
+                    <td align="right" style="padding-right:1px;">
+
+                        @if (Convert.ToInt32(Session["kullanicidi"]) == item.yorum_kullanici_id)
+                        {
+
+                            <a style="background-color:red; border-radius:10px; color:white; padding-left:3px; padding-right:3px;" class="btn-danger" href="~/Anasayfa/Yorumsil/@item.yorumid"> Yorumu Sil </a>
+                        }
+                    </td>
+                </tr>
+            </table>
+        }
+
+
+    </div>
+</div>
+
+
+
+@using (Html.BeginForm("DuyuruDetay", "Anasayfa", FormMethod.Post))
+{
+    <div class="login-page">
+        <div class="form">
+
+            <div class="login-form">
+                <table align="center">
+                    <tr>
+                        <td>
+                            <textarea style="border-radius:20px; border-style:double; padding:5px; resize:none; width:600px; height:60px;" placeholder="Yorum yazmak için tıklayın..." id="yorum" class="form-control" name="yorum"></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td align="center">
+                            <button type="submit" style="border-color:red; width:120px; border-radius:15px; background-color:aliceblue;"> Yorum yap</button>
+                        </td>
+                    </tr>
+                </table>
+                
+                
+
+            </div>
+        </div>
+    </div>
+}

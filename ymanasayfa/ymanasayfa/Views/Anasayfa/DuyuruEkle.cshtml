@@ -1,0 +1,36 @@
+﻿@using (Html.BeginForm("DuyuruEkle", "Anasayfa", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div class="login-page">
+        <div class="form">
+
+            <div class="login-form">
+
+                <table style="border-radius:15px; margin:10px; margin-left:185px; padding:10px;" width="600">
+                    <tr>
+                        <td rowspan="2"></td>
+                        <td>
+                            <textarea  style="width:450px; background-color:ghostwhite; resize:none;" id="yazi" name="yazi" placeholder="Duyuru Bilgi Ekle"></textarea>
+                        </td>
+                        <td><button type="submit" style="background-color:#15566b; height:40px; color:white;"> Duyuru Ekle</button></td>
+                    </tr>
+                    
+                    <tr>
+
+                        <td>
+                            <input type="file" id="resim" name="resim" value="Resim Seç" />
+
+                        </td>
+                    </tr>
+
+                 
+                </table>
+                
+
+            </div>
+        </div>
+    </div>
+}
+
+
+
+

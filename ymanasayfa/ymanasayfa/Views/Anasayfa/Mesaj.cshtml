@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "Mesaj";
+    Layout = "~/Views/Shared/LayoutMesaj.cshtml";
+}
+
+@using (Html.BeginForm("Mesaj", "Anasayfa", FormMethod.Post))
+{
+    <div class="login-page">
+        <div class="form">
+
+            <div class="login-form">
+
+                <table style="border-radius:15px; background-color:gainsboro; margin:10px; margin-left:185px; padding:10px;" width="600">
+                    <tr>
+
+                        <td align="center">
+                            <textarea id="yorum" class="form-control" style="width:500px; resize:none;" name="mesajicerik"></textarea>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td align="center">
+                            <button type="submit" style="background-color:white; color:darkred;">Mesaj Gönder</button>
+                        </td>
+                    </tr>
+
+
+                </table>
+                
+
+            </div>
+        </div>
+    </div>
+}
+
+
+

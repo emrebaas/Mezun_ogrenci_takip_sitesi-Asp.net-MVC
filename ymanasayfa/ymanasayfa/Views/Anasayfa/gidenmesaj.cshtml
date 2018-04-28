@@ -1,0 +1,40 @@
+﻿@model IEnumerable<ymanasayfa.Models.Mesaj>
+
+@{
+    ViewBag.Title = "gidenmesaj";
+    Layout = "~/Views/Shared/Layoutgelenmesaj.cshtml";
+}
+
+<table class="table" width="940">
+    <tr>
+        <th align="center">
+            <h4 style="color:red;background-color:white;">Gönderilen Kişi</h4>
+        </th>
+        <th align="center" colspan="3">
+            <h4 style="color:red; background-color:white;margin-left:4px;">Mesaj İçeriği</h4>
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td width="150px">
+               
+                        @Html.DisplayFor(modelItem => item.Kullanıcı.isim)
+           
+            </td>
+           
+            <td style="padding-left:5px;">
+                @Html.DisplayFor(modelItem => item.mesaj_icerik)
+            </td>
+
+        </tr>
+        <tr>
+            <td colspan="3"><hr style="color:white;" /></td>
+        </tr>
+    }
+
+</table>
+
+

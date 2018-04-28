@@ -1,0 +1,72 @@
+﻿
+@{
+    ViewBag.Title = "KayHak";
+    Layout = "~/Views/Shared/LayoutGiris.cshtml";
+}
+
+@using (Html.BeginForm("KayHak", "Giris", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <form>
+        <div class="login-page">
+            <div class="form">
+
+                <div class="login-form">
+                    <input type="text" id="mail" name="mail" placeholder="E-Mail" />
+                    <input type="text" id="tel" name="tel" placeholder="Telefon" />
+                    <input type="text" id="yas" name="yas" placeholder="Yaşınız" />
+                    <input type="text" id="bulyer" name="bulyer" placeholder="Bulunduğunu Yer" />
+                    <input type="text" id="calyer" name="calyer" placeholder="Çalıştığı Yer" />
+                    <input type="text" id="bio" name="bio" placeholder="Biografi" />
+
+
+                    <table width="270" height="50" style="margin-bottom:20px; color:darkslategray; background-color:#f2f2f2;">
+                        <tr>
+                            <td align="left">Öğrenim Durumu :</td>
+                            <td align="right">
+                                <select name="durum">
+                                    <option value="1">Öğrenci</option>
+                                    <option value="2">Mezun</option>
+
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                    <table width="270" height="50" style="margin-bottom:20px; color:darkslategray; background-color:#f2f2f2;">
+                        <tr>
+                            <td align="left">Giriş Tarihi</td>
+                            <td align="right">
+                                <select name="giristar">
+                                    <option value="1">2005</option>
+                                    <option value="2">2006</option>
+                                    <option value="3">2007</option>
+                                    <option value="4">2008</option>
+                                    <option value="5">2009</option>
+                                    <option value="6">2010</option>
+                                    <option value="7">2011</option>
+                                    <option value="8">2012</option>
+                                    <option value="9">2013</option>
+                                    <option value="10">2014</option>
+                                    <option value="11">2015</option>
+                                    <option value="12">2016</option>
+                                    <option value="13">2017</option>
+
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                    
+
+                   
+
+
+
+
+
+
+                    <button type="submit">Kaydol</button>
+                    <p class="message">Kayıtlımısın<a href="~/Giris/Index">Giriş Yap</a></p>
+                </div>
+            </div>
+        </div>
+    </form>
+}

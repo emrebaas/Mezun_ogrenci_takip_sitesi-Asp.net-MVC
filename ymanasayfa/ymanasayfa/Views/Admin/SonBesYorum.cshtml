@@ -1,0 +1,34 @@
+﻿@model IEnumerable<ymanasayfa.Models.Yorum>
+
+
+<table class="table" width="940">
+    <tr>
+        <th style="background-color:#15566b">
+            <h4 style="color:white;">Duru Başlığı</h4>
+        </th>
+        <th style="background-color:#15566b">
+            <h4 style="color:white;">Yorum Sahibi</h4>
+        </th>
+        <th style="background-color:#15566b">
+            <h4 style="color:white;">Yorum</h4>
+        </th>
+        
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td width="200px" style="background-color:lightsteelblue">
+                @Html.DisplayFor(modelItem => item.Duyuru.duyuruisim)
+            </td>
+            <td width="200px" style="background-color:lightsteelblue">
+                @Html.DisplayFor(modelItem => item.Kullanıcı.kadi)
+            </td>
+            <td width="540" style="background-color:lightsteelblue">
+                @Html.DisplayFor(modelItem => item.yorum_aciklama)
+            </td>
+        </tr>
+    }
+
+</table>
+

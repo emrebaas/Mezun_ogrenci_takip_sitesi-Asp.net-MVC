@@ -1,0 +1,43 @@
+﻿@model IEnumerable<ymanasayfa.Models.Duyuru>
+
+@{
+    Layout = null;
+}
+
+@section deneme{
+<table class="tale">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Kullanıcı.kadi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.duyuruisim)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.duyururesim)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Kullanıcı.kadi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.duyuruisim)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.duyururesim)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.duyuru_id }) |
+                @Html.ActionLink("Details", "Details", new { id = item.duyuru_id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.duyuru_id })
+            </td>
+        </tr>
+    }
+
+</table>
+}

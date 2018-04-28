@@ -1,0 +1,89 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>_Layout</title>
+    <link href="~/Content/css/menu.css" rel="stylesheet" />
+    <link href="~/Content/css/anasayfa.css" rel="stylesheet" />
+    <link href="~/Content/css/menuprofil.css" rel="stylesheet" />
+    <link href="~/Content/css/gizlimenu.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="kutu">
+        <div id="ust">
+
+            @*Menü kısmı burada*@
+            <ul id="menu">
+
+                <li style="padding-left:20px; padding-bottom:5px;">
+
+
+                    @if (Session["kullaniciadi"] != null && Session["kullanicifoto"] != null)
+                    {
+                        <div class="dairesel">
+                            <img width="60" height="60" src="~/Content/img/@Session["kullanicifoto"].ToString()" />
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="dairesel">
+                            <img width="60" height="60" src="~/Content/img/memlog.png" />
+                        </div>
+                    }
+
+                </li>
+
+                <li style="padding-left:20px;padding-top:4px; ">
+                    <a href="~/Anasayfa/DuyuruListele">Ana Sayfa</a>
+                </li>
+
+                <li style="padding-top:4px;">
+                    <a href="~/Anasayfa/Profil/@Convert.ToInt32(Session["kullanicidi"])">Profil</a>
+                </li>
+                <li style="padding-top:4px;">
+                    <a href="~/Giris/Index">Çıkış</a>
+                </li>
+
+                <li style="padding-left:220px; padding-top:4px; ">
+
+                    <form action="/Anasayfa/Arama" method="post">
+
+                        <input type="text" name="aranan" id="aranan" style="padding-left:50px; padding-right:50px; border-radius:10px;">
+
+                        <input style="border-radius:10px;" type="submit" value="Arama">
+
+                    </form>
+
+                </li>
+
+                
+            </ul>
+
+
+        </div>
+
+
+        <div id="ortaprofil">
+            @RenderBody()
+
+
+
+
+        </div>
+
+        <div id="orta" style="margin-top:0px;">
+            @{Html.RenderAction("pageorn", "Anasayfa");}
+        </div>
+
+
+    </div>
+
+</body>
+</html>
+

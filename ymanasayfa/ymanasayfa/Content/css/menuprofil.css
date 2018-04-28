@@ -1,0 +1,69 @@
+﻿ul{
+margin:0;
+padding:0;
+}
+
+li{
+display:inline;
+list-style-type:none;
+}
+
+a.glidebutton{
+display: inline-block;
+position: relative;
+color: #4A4A4A; 
+background: #ececec; 
+text-decoration: none;
+font: bold 14px Arial; 
+letter-spacing: 2px; 
+overflow: hidden;
+height: 30px; 
+text-align: center;
+border-radius: 0px; 
+-moz-transition: all 0.3s ease-in-out; 
+-webkit-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+-ms-transform: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+}
+
+a.glidebutton > span:first-child{
+position: relative;
+display: block;
+height: 100%;
+padding: 6px;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+-moz-transition: all 0.3s ease-in-out;
+-webkit-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+}
+
+a.glidebutton > span:first-child:after{ 
+content: attr(data-text);
+display: block;
+width: 100%;
+height: 100%;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+padding: inherit;
+position: absolute;
+top:100%;
+left:0;
+}
+
+a.glidebutton:hover{
+color: black;
+background-color:white;
+box-shadow: 0 0 4px red inset;
+}
+
+a.glidebutton:hover > span:first-child{
+-moz-transform: translateY(-100%);
+-webkit-transform: translateY(-100%);
+-ms-transform: translateY(-100%);
+-o-transform: translateY(-100%);
+transform: translateY(-100%);
+}

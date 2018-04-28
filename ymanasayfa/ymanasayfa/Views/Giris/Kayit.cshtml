@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "Kayit";
+    Layout = "~/Views/Shared/LayoutGiris.cshtml";
+}
+
+@using (Html.BeginForm("Kayit", "Giris", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+<form>
+    <div class="login-page">
+        <div class="form">
+
+            <div class="login-form">
+                <input type="text" id="adivesoyadi" name="adivesoyadi" placeholder="Adınız Ve Soyadınız" />
+                <input type="text" id="kuladi" name="kuladi" placeholder="Kullanıcı Adı" />
+                <input type="text" id="sifre" name="sifre" placeholder="Şifre" />
+                <input type="file" id="resim" name="resim" placeholder="Resim" />
+                <button type="submit">Devam Et</button>
+                <p class="message">Kayıtlımısın<a href="~/Giris/Index">Giriş Yap</a></p>
+            </div>
+        </div>
+    </div>
+</form>
+}

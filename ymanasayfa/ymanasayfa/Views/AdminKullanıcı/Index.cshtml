@@ -1,0 +1,58 @@
+﻿@model IEnumerable<ymanasayfa.Models.Kullanıcı>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/LayoutAdmin.cshtml";
+}
+
+
+
+
+<table align="center" width="500" style="margin-top:50px;">
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td width="100">
+
+                @if (item.resim == null || item.resim == "NULL" || item.resim == "")
+                {
+                    <a href="/Anasayfa/Profil/@item.id">
+                        <img width="100" height="100" src="~/Content/img/memlog.png" />
+                    </a>
+                }
+                else
+                {       <a href="/Anasayfa/Profil/@item.id">
+                <img width="100" height="100" src="~/Content/img/@item.resim" />
+            </a>
+                }
+
+
+
+            </td>
+
+
+
+            <td style="padding-left:30px;">
+                <h3 style="color:darkcyan">@Html.DisplayFor(modelItem => item.isim)</h3>
+            </td>
+
+            <td>
+                <a href="~/Anasayfa/Profil/@item.id"> <img width="100" height="30" src="~/Content/img/detay.png" /></a>
+
+            </td>
+
+            <td>
+                
+                @Html.ActionLink("Sil", "Delete", new { id = item.id })
+            </td>
+        </tr>
+        <tr>
+            <td style="padding-bottom:20px;" colspan="3">
+
+                <img width="500" src="~/Content/img/cizgi.png" />
+            </td>
+        </tr>
+    }
+
+</table>

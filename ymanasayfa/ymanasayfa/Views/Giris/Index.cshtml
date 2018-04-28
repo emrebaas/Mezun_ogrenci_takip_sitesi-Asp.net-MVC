@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/LayoutGiris.cshtml";
+}
+
+
+
+<form action="/Giris/Giris" method="post">
+    <div class="login-page">
+        <div class="form">
+
+            <div class="login-form">
+                <input type="text" id="kuladi" name="kuladi" placeholder="Kullanıcı Adı" />
+                <input type="password" id="sifre" name="sifre" placeholder="Şifre" />
+                <button type="submit">Giriş</button>
+                <p class="message">Kayıtlı Değilmisin<a href="~/Giris/Kayit">Kaydol</a></p>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+
+
+
+
+

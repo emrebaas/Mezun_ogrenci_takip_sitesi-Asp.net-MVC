@@ -1,0 +1,82 @@
+﻿@model IEnumerable<ymanasayfa.Models.Duyuru>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<table align="center" width="550" style="height:auto;" border="0">
+
+
+    @foreach (var item in Model)
+    {
+        Session["id"] = item.duyuru_kullanici_id;
+        <tr>
+            <td style="padding-bottom:10px;" colspan="2"></td>
+        </tr>
+        <tr>
+            <td>
+
+
+                @if (item.Kullanıcı.resim == null || item.Kullanıcı.resim=="NULL" || item.Kullanıcı.resim == "")
+                {
+                    <a href="/Anasayfa/Profil/@item.duyuru_kullanici_id">
+                    <img style="border-radius:40px;" width="60" height="60" src="~/Content/img/memlog.png" />
+                    </a>
+                }
+                else
+                {
+                    <a href="/Anasayfa/Profil/@item.duyuru_kullanici_id">
+                        <img style="border-radius:40px;" width="60" height="60" src="~/Content/img/@item.Kullanıcı.resim" />
+                        </a>
+                        
+                }
+
+
+
+</td>
+            <td>
+                <a href="/Anasayfa/DuyuruDetay/@item.duyuru_id"> 
+                @Html.DisplayFor(modelItem => item.duyuruisim)
+                    </a>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td style="padding-bottom:20px">
+
+
+                @if (item.duyururesim == null || item.duyururesim.Length < 1)
+                {
+
+                }
+                else
+                {
+                    <a href="/Anasayfa/DuyuruDetay/@item.duyuru_id"> 
+                    <img width="500" height="200" src="~/Content/img/duyuru/@item.duyururesim" />
+                        </a>
+                }
+
+
+
+            </td>
+
+        </tr>
+        <tr>
+            <td align="right" colspan="2"><a href="/Anasayfa/DuyuruDetay/@item.duyuru_id">
+                    <img width="100" height="30" src="~/Content/img/detay.png" />
+                </a>
+            </td>
+        </tr>
+
+        <tr>
+            <td style="padding-bottom:20px;" colspan="2">
+
+                <img width="570" src="~/Content/img/cizgi.png" />
+            </td>
+        </tr>
+    }
+
+</table>

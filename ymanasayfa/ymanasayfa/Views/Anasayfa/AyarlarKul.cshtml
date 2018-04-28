@@ -1,0 +1,72 @@
+﻿@model ymanasayfa.Models.Kullanıcı
+@{
+    ViewBag.Title = "AyarlarKul";
+    Layout = "~/Views/Shared/LayoutBos.cshtml";
+}
+
+
+@using (Html.BeginForm("AyarlarKul", "Anasayfa", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+
+    @Html.AntiForgeryToken()
+
+    <table  border="0" align="center" style="padding:10px; background-color:#15566b;border-radius:20px; margin-top:50px; margin-bottom:50px; ">
+        <tr>
+            <td align="left" style="padding-bottom:20px; color:white; width:150px;">
+                Kullanıcı Adı
+            </td>
+            <td align="left" style="padding-bottom:20px;">
+                @Html.EditorFor(model => model.kadi, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.kadi, "", new { @class = "text-danger" })
+            </td>
+        </tr>
+
+        <tr>
+            <td align="left" style="padding-bottom:20px; color:white; width:150px;">
+                Şifre
+            </td>
+            <td align="left" style="padding-bottom:20px;">
+                @Html.EditorFor(model => model.ksifre, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.ksifre, "", new { @class = "text-danger" })
+            </td>
+        </tr>
+
+        <tr>
+            <td align="left" style="padding-bottom:20px; color:white; width:150px;">
+            Adı Ve Soyadı</td>
+            <td align="left" style="padding-bottom:20px;">
+                @Html.EditorFor(model => model.isim, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.isim, "", new { @class = "text-danger" })
+            </td>
+        </tr>
+
+        <tr>
+            <td align="left" style="padding-bottom:40px; color:white; width:150px;">
+            Resim</td>
+            <td style="padding-bottom:20px;">
+                <input style="margin:auto;" type="file" name="resim" id="resim" class="form-control" />
+                @Html.ValidationMessageFor(model => model.resim, "", new { @class = "text-danger" })
+            </td>
+        </tr>
+
+        <tr>
+            <td align="center">
+                <form>
+                    <button src="~/Anasayfa/Profil/@Model.id" style="border-radius:15px; color:red; width:100px; height:30px;" class="btn btn-default">İptal</button>
+                </form>
+            </td>
+
+            <td align="center">
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Kaydet" style="border-radius:15px; color:red; width:100px; height:30px;" class="btn btn-default" />
+                    </div>
+                </div>
+            </td>
+
+        </tr>
+    </table>
+
+
+}
+

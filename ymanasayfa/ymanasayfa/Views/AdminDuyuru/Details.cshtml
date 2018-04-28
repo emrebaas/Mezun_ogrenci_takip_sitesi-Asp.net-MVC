@@ -1,0 +1,104 @@
+﻿@model ymanasayfa.Models.Duyuru
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/LayoutAdmin.cshtml";
+}
+
+
+
+
+
+
+<table align="center" style="margin-top:50px; margin-bottom:50px;">
+    <tr>
+        <td>
+
+            @if (Model.Kullanıcı.resim == null || Model.Kullanıcı.resim == "NULL" || Model.Kullanıcı.resim == "")
+            {
+                <a href="/Anasayfa/Profil/@Model.duyuru_kullanici_id">
+                    <img width="50" height="50" style="border-radius:20px;" src="~/Content/img/memlog.png" />
+                </a>
+            }
+            else
+            {   <a href="/Anasayfa/Profil/@Model.duyuru_kullanici_id">
+                <img width="50" height="50" style="border-radius:20px;" src="~/Content/img/@Model.Kullanıcı.resim" />
+            </a>
+            }
+
+
+
+        </td>
+        <td>@Html.DisplayFor(model => model.duyuruisim)</td>
+    </tr>
+
+    <tr>
+        <td></td>
+        <td width="600">
+            @if (Model.duyururesim == null || Model.duyururesim.Length < 1)
+            {
+
+            }
+            else
+            {
+
+                <img width="600" height="250" src="~/Content/img/duyuru/@Model.duyururesim">
+            }
+        </td>
+    </tr>
+
+</table>
+
+<div>
+    <div style="overflow:scroll; height:400px;">
+        @foreach (var item in Model.Yorums.ToList())
+        {
+            <table border="0" align="center" width="500" style="margin-top:2px; margin-left:250px; background-color:#d6e4e2;padding-left:3px;">
+                <tr>
+                    <td width="40">
+
+                        @if (item.Kullanıcı.resim == null || Model.Kullanıcı.resim == "NULL" || Model.Kullanıcı.resim == "")
+                        {
+                            <a href="/Anasayfa/Profil/@item.yorum_kullanici_id">
+                                <img width="30" height="30" style="border-radius:20px;" src="~/Content/img/memlog.png" />
+                            </a>
+                        }
+                        else
+                        {       <a href="/Anasayfa/Profil/@item.yorum_kullanici_id">
+                            <img width="30" height="30" style="border-radius:20px;" src="~/Content/img/@item.Kullanıcı.resim" />
+                        </a>
+                        }
+
+
+
+                    </td>
+
+                    <td style="padding-left:5px;">
+                        <a href="/Anasayfa/Profil/@item.yorum_kullanici_id">
+                            <h5 style="float:left; color:#2a7cc6;">@item.Kullanıcı.isim &nbsp;&nbsp; </h5>
+                        </a><h5 style="color:#4a4243;">  @item.yorum_aciklama</h5>
+
+                    </td>
+                    <td align="right" style="padding-right:1px;">
+
+                        @if (Convert.ToInt32(Session["kullanicidi"]) == item.yorum_kullanici_id)
+                        {
+
+                            <a style="background-color:red; border-radius:10px; color:white; padding-left:3px; padding-right:3px;" class="btn-danger" href="~/Anasayfa/Yorumsil/@item.yorumid"> Yorumu Sil </a>
+                        }
+                    </td>
+                </tr>
+            </table>
+        }
+
+
+    </div>
+</div>
+
+
+
+
+
+<p>
+    @Html.ActionLink("Geri Dön", "Index")
+</p>

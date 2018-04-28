@@ -1,0 +1,186 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>_Layout</title>
+    <link href="~/Content/css/menu.css" rel="stylesheet" />
+    <link href="~/Content/css/anasayfa.css" rel="stylesheet" />
+    <link href="~/Content/css/menuprofil.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="kutu">
+        <div id="ust">
+
+            @*Menü kısmı burada*@
+            <ul id="menu">
+
+                <li style="padding-left:20px; padding-bottom:5px;">
+
+
+                    @if (Session["kullaniciadi"] != null && Session["kullanicifoto"] != null)
+                    {
+                        <div class="dairesel">
+                            <img width="60" height="60" src="~/Content/img/@Session["kullanicifoto"].ToString()" />
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="dairesel">
+                            <img width="60" height="60" src="~/Content/img/memlog.png" />
+                        </div>
+                    }
+
+                </li>
+
+                <li style="padding-left:20px;padding-top:4px; ">
+                    <a href="~/Anasayfa/DuyuruListele">Ana Sayfa</a>
+                </li>
+
+                <li style="padding-top:4px;">
+                    <a href="~/Anasayfa/Profil/@Convert.ToInt32(Session["kullanicidi"])">Profil</a>
+                </li>
+                <li style="padding-top:4px;">
+                    <a href="~/Giris/Index">Çıkış</a>
+                </li>
+
+                <li style="padding-left:220px; padding-top:4px; ">
+
+                    <form action="/Anasayfa/Arama" method="post">
+
+                        <input type="text" name="aranan" id="aranan" style="padding-left:50px; padding-right:50px; border-radius:10px;">
+
+                        <input style="border-radius:10px;" type="submit" value="Arama">
+
+                    </form>
+
+                </li>
+            </ul>
+
+
+        </div>
+
+
+        <div id="ortaprofil">
+
+            <div id="profilresim">
+                <table border="0">
+                    <tr>
+                        <td align="center">
+
+
+
+
+                            @if (@Session["kullanicifoto"] == null)
+                            {
+                                <img width="150" height="200" src="~/Content/img/memlog.png" />
+                            }
+                            else
+                            {
+                                <img width="150" height="200" src="~/Content/img/@Session["kullanicifoto"].ToString()" />
+                            }
+
+
+
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="font:bold; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" align="center">
+                            @Session["kullaniciisim"]
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+
+
+
+            <div id="profilhakkinda">
+
+
+
+                <table>
+                    <tr>
+                        <td>Öğrenim Durumu :</td>
+                        <td>
+                            @Session["hakkindamezundurum"].ToString()
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Giriş Yılı :</td>
+                        <td>@Session["hakkindagiristarih"].ToString()</td>
+                    </tr>
+
+                    <tr>
+                        <td>Yaş :</td>
+                        <td>@Session["hakkindayas"]</td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="2">İletişim Bilgileri :</td>
+                        <td>@Session["hakkindaemail"]</td>
+                    </tr>
+
+                    <tr>
+                        <td>@Session["hakkindatel"].ToString()</td>
+                    </tr>
+
+                    <tr>
+                        <td>Bulunduğu Yer :</td>
+                        <td>@Session["hakkindayer"].ToString()</td>
+                    </tr>
+                    <tr>
+                        <td>Çalıştığı Yer :</td>
+                        <td>@Session["hakkindaisyer"].ToString()</td>
+                    </tr>
+                    <tr>
+                        <td>Biyografi :</td>
+                        <td>@Session["hakkindabiol"].ToString()</td>
+                    </tr>
+
+                </table>
+
+
+            </div>
+
+
+        </div>
+ 
+
+        <div id="ortaprofilmenu" style="height:50px;">
+           
+                <ul>
+
+
+                    <li><a class="glidebutton" href="~/Anasayfa/gelenmesaj/@Convert.ToInt32(Session["kullanicidi"])"><span data-text="Gelen Mesaj">Gelen Mesaj</span></a></li>
+                    <li><a class="glidebutton" href="~/Anasayfa/gidenmesaj/@Convert.ToInt32(Session["kullanicidi"])"><span data-text="Gönderilen Mesaj">Gönderilen Mesaj</span></a></li>
+                    <li><a class="glidebutton" href="~/Anasayfa/AyarlarKul/@Convert.ToInt32(Session["kullanicidi"])"><span data-text="Hesap Ayarları">Hesap Ayarları</span></a></li>
+                    <li><a class="glidebutton" href="~/Anasayfa/AyarlarHak/@Convert.ToInt32(Session["kullanicidi"])"><span data-text="Profil Ayarları">Profil Ayarları</span></a></li>
+
+
+                </ul>
+
+            
+
+        </div>
+
+
+        <div id="orta" style="margin-top:0px; height:500px; background-image: url('../../Content/img/mesajarka.png'); background-repeat:no-repeat;background-size:auto; overflow:scroll; scrollbar-face-color:white;" >
+          @RenderBody()
+        </div>
+
+
+        
+
+   </div>
+
+</body>
+</html>
+
